@@ -1,225 +1,208 @@
-# github-tests
+github-tests
+============
+
 A repo for testing GitHub functionality and services.
 
-This paragraph has a hard-line break right here:
-And this is a newline line.
+Project’s Website:
 
-## Github Flavoured Markdown Cheat Sheet
+-   <https://tajmone.github.io/github-tests/>
+
+This paragraph has a hard-line break right here: And this is a newline line.
+
+Github Flavoured Markdown Cheat Sheet
+-------------------------------------
 
 Writing text without any specific symbol(s) and/or syntax(es) will be wrapped into `<p>`.
 
 How have I done that `inline code highlighting`?
 
-```
-Writing text without any specific symbol(s) and/or syntax(es) will be wrapped into `<p>`.
+    Writing text without any specific symbol(s) and/or syntax(es) will be wrapped into `<p>`.
 
-How have I done that `inline code highlighting`?
-```
----
+    How have I done that `inline code highlighting`?
 
-# Heading 1
-## Heading 2
+------------------------------------------------------------------------
+
+Heading 1
+=========
+
+Heading 2
+---------
+
 ### Heading 3
+
 #### Heading 4
+
 ##### Heading 5
+
 ###### Heading 6
 
 How?
 
-```
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
-```
+    # Heading 1
+    ## Heading 2
+    ### Heading 3
+    #### Heading 4
+    ##### Heading 5
+    ###### Heading 6
+
 Remember `<h1>` and `<h2>` gets `border-bottom` automatically.
 
 And all the headings are assigned with `unique-id`.
 
 Alternate syntax for `<h1>` and `<h2>`:
 
-```
-Heading 1
-=========
-Heading 2
----------
-```
-<hr />
+    Heading 1
+    =========
+    Heading 2
+    ---------
 
+<hr />
 > Blockquote ? Yes it is.
 
 How?
 
-```
-> Blockquote ? Yes it is.
-```
-<hr />
+    > Blockquote ? Yes it is.
 
+<hr />
 ~~Strikethrough~~
 
 How?
 
-```
-~~Strikethrough~~
-```
-<hr />
+    ~~Strikethrough~~
 
-* Hi
-* How 
-* Are 
-* You?
+<hr />
+-   Hi
+-   How
+-   Are
+-   You?
 
 How?
 
-```
-* Hi
-* How 
-* Are 
-* You?
-or 
-* Hi
-+ How
-- Are
-* You?
-```
+    * Hi
+    * How 
+    * Are 
+    * You?
+    or 
+    * Hi
+    + How
+    - Are
+    * You?
 
 **What about ordered list?**
 
-1. One (Hi)
-2. Two (How)
-3. Three (Are)
-4. Four (You)
+1.  One (Hi)
+2.  Two (How)
+3.  Three (Are)
+4.  Four (You)
 
 How?
 
-```
-1. One (Hi)
-2. Two (How)
-3. Three (Are)
-4. Four (You)
-```
+    1. One (Hi)
+    2. Two (How)
+    3. Three (Are)
+    4. Four (You)
 
 **Sub lists**
 
-1. Getting started
-  + Download
-  + Install
-2. Make a dummy file
+1.  Getting started
+
+-   Download
+-   Install
+
+1.  Make a dummy file
 
 How?
 
-```
-1. Getting started
-  + Download
-  + Install
-2. Make a dummy file
-```
+    1. Getting started
+      + Download
+      + Install
+    2. Make a dummy file
 
 or
 
-1. Getting started
-  1. Download
-  2. Install
-2. Make a dummy file
+1.  Getting started
+2.  Download
+3.  Install
+4.  Make a dummy file
 
-```
-1. Getting started
-  1. Download
-  2. Install
-2. Make a dummy file
-```
+<!-- -->
 
+    1. Getting started
+      1. Download
+      2. Install
+    2. Make a dummy file
 
 **Complex**
 
-1. Level 1
-  1. Level 2
-    + Level 3
-      - Level 4
-        * Level 5
+1.  Level 1
+2.  Level 2
+    -   Level 3
+    -   Level 4
+        -   Level 5
 
 How ?
 
-```
-1. Level 1
-  1. Level 2
-    + Level 3
-      - Level 4
-        * Level 5
-```
+    1. Level 1
+      1. Level 2
+        + Level 3
+          - Level 4
+            * Level 5
 
 <hr />
-
 *`em` tag*
 
 How?
 
-```
-*`em` tag*  OR
-_`em` tag_
-```
+    *`em` tag*  OR
+    _`em` tag_
 
 **`strong` tag**
 
 How?
 
-```
-**`strong` tag** OR
-__`strong` tag__
-```
+    **`strong` tag** OR
+    __`strong` tag__
 
 Noticed? Just written inline-code in `em` and `strong` tag.
 
-If you want to produce __\*__ and **\_** then add `\` before `_` and `*`. So `\*` = \* and `\_` = \_
+If you want to produce **\*** and **\_** then add `\` before `_` and `*`. So `\*` = \* and `\_` = \_
 
 <hr />
-
 **Image:**
 
 ![alt text](http://lorempixel.com/100/100/ "title here")
 
 How?
 
-```
-![alt text](http://lorempixel.com/100/100/ "title here")
-```
+    ![alt text](http://lorempixel.com/100/100/ "title here")
 
 Another way:
 
-
 `![alt text][id]`  
-`[id]: http://lorempixel.com/100/100/ "title here"`  
+`[id]: http://lorempixel.com/100/100/ "title here"`
 
 <hr />
-
 **Link:**
 
 [Github](http://github.com "title here")
 
 How?
 
-```
-[Github](http://github.com "title here")
-```
+    [Github](http://github.com "title here")
 
 Another way:
-
 
 `[github][id2]`  
 `[id2]: http://github.com "title here"`
 
 <hr />
-
 **Automatic Links? (Yeah)**
 
-http://github.com
+<http://github.com>
 
 How? just paste with the full url means with `http://` or `https://`. e.g. `http://github.com`.
 
 <hr />
-
 You can also use HTML tags.
 
 <table>
@@ -232,16 +215,14 @@ You can also use HTML tags.
     <td> Kaushalya </td>
   </tr>
 </table>
-
 Yes, Table with HTML tags.
 
 <hr />
-
 **Code Highlighting**
 
 **HTML**
 
-```html
+``` html
 <body>
   <div class="loader"></div>
   <div class="pause">Click To Pause</div>
@@ -249,10 +230,9 @@ Yes, Table with HTML tags.
 ```
 
 <hr />
-
 **SCSS**
 
-```scss
+``` scss
 
 $width: 7em;
 $height: 3em;
@@ -318,10 +298,9 @@ input[type="checkbox"] {
 ```
 
 <hr />
-
 **CSS**
 
-```css
+``` css
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
 
 body {
@@ -342,67 +321,57 @@ body {
     color: grey;
   }
 }
-
 ```
 
 **How to highlight code?**
 
-- You can highlight code with **4 spaces** or with **```(language-name(optional))**.
+-   You can highlight code with **4 spaces** or with **\`\`\`(language-name(optional))**.
 
 **Highlight without any language syntax**
 
-```
-" ```
-  <-- code here -->
-  ``` "
-```
-  
-  - This will just wrap `code` in `pre` tag.
-  - Ignore `"` because It's not showing alone, So I've to use it.
+    " ```
+      <-- code here -->
+      ``` "
+
+-   This will just wrap `code` in `pre` tag.
+-   Ignore `"` because It’s not showing alone, So I’ve to use it.
 
 **Highlight with any language syntax**
-  
-```html
+
+``` html
 " ```html
   <-- code here -->
   ``` "
 ```
-  
-  - I've written `html` because I want to highlight `html code`. 
-  - You can use other languages, For example: `scss`, `sass`, `python`, `ruby`, `javascript`, `jade`, `less`, `php` etc.
-  - Ignore `"` because It's not showing alone, So I've to use it.
 
----
+-   I’ve written `html` because I want to highlight `html code`.
+-   You can use other languages, For example: `scss`, `sass`, `python`, `ruby`, `javascript`, `jade`, `less`, `php` etc.
+-   Ignore `"` because It’s not showing alone, So I’ve to use it.
 
+------------------------------------------------------------------------
 
 Horizontal Line? `<hr />`
 
----
+------------------------------------------------------------------------
 
 How?
 
-```
-This, 
---- 
-or this,
-<hr />
-```
+    This, 
+    --- 
+    or this,
+    <hr />
 
 Break Line? `<br />`
 
 How?
 
-- Either write two space after a sentence or Write next line after hitting `Enter` (Hit `Enter` one time if you're in the next line of the previous line or Hit two times `Enter` if you are on the line in which after you want line break.)
+-   Either write two space after a sentence or Write next line after hitting `Enter` (Hit `Enter` one time if you’re in the next line of the previous line or Hit two times `Enter` if you are on the line in which after you want line break.)
 
----
+------------------------------------------------------------------------
 
-**Resources \- [Github Help on GFM] (https://help.github.com/articles/github-flavored-markdown "Help From Github on GFM"), [CSSDeck Docs] (http://cssdeck.com/labs/learning-the-markdown-syntax "Markdown Help")**
-
+**Resources - \[Github Help on GFM\] (<https://help.github.com/articles/github-flavored-markdown> “Help From Github on GFM”), \[CSSDeck Docs\] (<http://cssdeck.com/labs/learning-the-markdown-syntax> “Markdown Help”)**
 
 **Thanks,**  
-<strong> \- By [Kaushalya Mandaliya][link_to_twitter] | http://seebeetee.com </strong>
+<strong> - By [Kaushalya Mandaliya](https://twitter.com/kmandalwala "Kaushalya on Twitter") | <http://seebeetee.com> </strong>
 
-[link_to_twitter]: https://twitter.com/kmandalwala "Kaushalya on Twitter"
-[official_md_docs]: http://daringfireball.net/projects/markdown/ "Markdown Docs"
-
-*Remember: This is <strong>Github Flavoured Markdown,</strong> [Official Markdown Docs][official_md_docs].*
+*Remember: This is <strong>Github Flavoured Markdown,</strong> [Official Markdown Docs](http://daringfireball.net/projects/markdown/ "Markdown Docs").*
