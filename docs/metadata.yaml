@@ -1,0 +1,35 @@
+---
+repo_title:        'My GitHub Tests'
+repo_description: 'A repo for testing GitHub functionality and services. '
+
+
+# ==============================================================================
+#                                  GITHUB LINKS                                 
+# ==============================================================================
+# The following fields are used for automagically creating links to your repo on
+# GitHub, and for the .zip and .tar download links.
+# Substitute example valures with your username and repository name as they appear
+# on GitHub (CASE SENSITIVE!!!)
+your_github_username: tajmone
+your_github_reponame: github-tests
+
+
+# If you don't need some fields, delete line or comment them out with a `#`!
+
+# HTML Metadata -- for <head> section
+title:       'Tristano’s GitHub Tests'
+lang: en
+date: December 12, 2016
+author:
+  - Tristano Ajmone
+keywords:
+  - your
+  - keywords list
+  - for
+  - search engines
+  - indexing
+css: path/to/extra.css # DON'T use URL (eg: "https://" or "http://")!!!
+header-includes: |
+  <!-- anything you put here will go inside html header
+       Useful for adding javascripts, custom metadata, ecc. -->
+...

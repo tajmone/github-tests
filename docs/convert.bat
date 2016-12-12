@@ -1,0 +1,1 @@
+pandoc --smart --wrap=none --normalize -f markdown_github-hard_line_breaks+yaml_metadata_block -t html5 --template=architect.template  "../README.md" "metadata.yaml" -o "index.html"
