@@ -39,3 +39,5 @@ The final HTML output in document preview is:
   </div>
 </div>
 ```
+
+> **NOTE**: I've tried to manually add the sanitized classes to the divs, through the browser's DevTools, and the right styling showed up. So there seems to be no workaround to this problem because you can't bypass GH's HTML sanitation filters in markdown docs previews.
