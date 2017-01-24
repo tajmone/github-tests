@@ -27,3 +27,15 @@ renders to:
 ----------------
 
 **TEST FAILED**: Styling didn't work.
+
+The problem is due to GitHub's HTML sanitation. Classes are being stripped from raw divs.
+
+The final HTML output in document preview is:
+
+```html
+<div>
+  <div>
+    Flash message goes here.
+  </div>
+</div>
+```
