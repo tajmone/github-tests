@@ -4,7 +4,7 @@
 
 -----
 
-**Table of Contents**
+**MarkdownTOC**
 
 <!-- MarkdownTOC autolink="true" bracket="round" autoanchor="false" lowercase="true" lowercase_only_ascii="true" uri_encoding="true" -->
 
@@ -19,7 +19,7 @@
 
 -----
 
-**Table of Contents**
+**gfmtoc**
 
 <!-- #toc -->
 
