@@ -25,6 +25,7 @@ Project Website via GitHub Pages:
 
 - [`/docs/`](./docs) — folder served as website via GitHub Pages.
 - [`/MarkdownTOC/`](./MarkdownTOC) — Testing the [MarkdownTOC] ST package.
+- [`/travis/`](./travis) — [Travis CI] with Win OS tests.
 - [`alerts.md`](./alerts.md)
 - [`anchors-test.md`](./anchors-test.md)
 - [`Ascii-Boxes.txt`](./Ascii-Boxes.txt)
@@ -42,8 +43,9 @@ Project Website via GitHub Pages:
                                REFERENCE LINKS                                
 ------------------------------------------------------------------------------>
 
-[website]: https://tajmone.github.io/github-tests/
 [MarkdownTOC]: https://github.com/naokazuterada/MarkdownTOC "Visit MarkdownTOC repository on GitHub"
+[Travis CI]: https://travis-ci.com "Visit Travis CI website"
 [Unlicense]: http://unlicense.org "Visit Unlicense.org"
+[website]: https://tajmone.github.io/github-tests/
 
 <!-- EOF -->
