@@ -1,4 +1,7 @@
 os: windows
-language: bash
-install: true
+language: minimal
+# language: bash
+# install: true
+git:
+  quiet: true
 script: ./travis/build.exe
