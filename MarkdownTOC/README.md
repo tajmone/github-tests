@@ -1,4 +1,4 @@
-# Title
+# MarkdownTOC Tests
 
     MarkdownTOC v3.0.4
 

@@ -1,5 +1,7 @@
 # GitHub Tests
 
+[![Build Status][Travis Badge]][Travis Link]
+
 - https://github.com/tajmone/github-tests
 
 A repo for testing GitHub functionality and services. Released into the public domain via [Unlicense].
@@ -47,5 +49,9 @@ Project Website via GitHub Pages:
 [Travis CI]: https://travis-ci.com "Visit Travis CI website"
 [Unlicense]: http://unlicense.org "Visit Unlicense.org"
 [website]: https://tajmone.github.io/github-tests/
+
+
+[Travis Badge]: https://travis-ci.com/tajmone/github-tests.svg?branch=master
+[Travis Link]: https://travis-ci.com/tajmone/github-tests
 
 <!-- EOF -->
