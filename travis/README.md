@@ -20,10 +20,13 @@ This folder is used to test [Travis CI] using Windows OS and custom binaries for
 
 # File Contents
 
-- `/_dev/AlanSDK/` Alan SKD precompiled binaries
-- `/alan-test/` — various test adventures (some fail)
+- [`/_dev/AlanSDK/`](./_dev/AlanSDK/) Alan SKD precompiled binaries
+- [`/alan-test/`](./alan-test/) — various test adventures:
+    + [`/bad/`](./alan-test/bad/) — all fail the build test.
+    + [`/good/`](./alan-test/good/) — all pass the build test.
 - `build.exe` — custom builder and validator.
 
+> __NOTE__ — Since `build.exe` will ignore all folders whose filename starts with underscore, to make the Travi build pass you only need to rename `/alan-test/bad/` to `/alan-test/_bad/`.
 
 # Overview
 
