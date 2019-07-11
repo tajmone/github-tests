@@ -1,4 +1,4 @@
 os: windows
 language: bash
 install: true
-script: .\travis\build.exe
+script: ./travis/build.exe
