@@ -1,0 +1,164 @@
+--==============================================================================
+--------------------------------------------------------------------------------
+-- "Simple Elevator" by Tristano Ajmone, 2019.
+--------------------------------------------------------------------------------
+--==============================================================================
+
+-- A bare-bones demonstration on how to implement a simple elevator which the
+-- hero can use to move between different floors. The elevator is implemented as
+-- a location with variable exits.
+
+Syntax press_button = press button.
+       press_button = call elevator.
+  
+-- =============================================================================
+
+-- The Elevator
+
+-- =============================================================================
+-- We define the elevator as a location with an exit that varies, depending on
+-- the floor on which the elevator is currently on. The elevator has a reference
+-- attribute `curr_floor` always pointing to the location at which the elevator
+-- is currently stationed. By querying and manipulating this attribute we are
+-- able to check the elevator whereabouts, move it around and handle conditional
+-- exits that vary, from and to the elevator.
+
+Syntax press_number = press (num)
+  Where num IsA integer
+    else "You can't press that!"
+
+The elevator IsA location.
+  Name 'Inside The Elevator'.
+  Description "You can see three buttons, numbered from 0 to 2."
+  Has
+    curr_floor 'Ground Floor'.
+    dest_floor 'Ground Floor'.
+  
+  Exit south to elevator
+    Does locate hero at curr_floor of elevator.
+  End exit.
+
+  Verb press_number
+    Check num < 3
+      Else "There are only 3 button here (0-2)!"
+    Does
+      "You press button $1"
+      Depending on num
+        = 0
+          Then set dest_floor of elevator to 'Ground Floor'.
+        = 1
+          Then set dest_floor of elevator to 'First Floor'.
+        = 2
+          Then set dest_floor of elevator to 'Second Floor'.
+      End depend.
+      If dest_floor of elevator = curr_floor of elevator
+        then  "but nothing happens because you're already at"
+        else  "and the elevators takes you to"
+      end if. "the requested floor."
+      Set curr_floor of elevator to dest_floor of elevator.
+  End verb.
+  
+  Verb press_button
+    Does only
+      "You should specify which button to press! (e.g. ""press 1"")"
+  End verb press_button.
+End the elevator.
+-- =============================================================================
+
+-- The Various Floors
+
+-- =============================================================================
+
+-- To simplify implementation, we'll create a specialized class for locations
+-- that have access to the elevator. This will allow us to place common elements
+-- to all these location in their base class.
+
+Every room_with_elevator IsA location.
+  Has xtra_desc "". --> stores instance-specific additional descriptions. 
+  Description
+    "To the north"
+    If curr_floor of elevator = current location
+      then "the elevator awaits you with open doors."
+      else "you can see the shut elevator doors."
+    end if.
+    If xtra_desc of this <> ""
+      then say this:xtra_desc.
+    end if.
+
+  Exit north to elevator
+    Check curr_floor of elevator = current location
+      else "The elevator is not at this floor right now."
+  End exit.
+
+  Verb press_button
+    Check curr_floor of elevator <> current location
+      else "The elevator is already here."
+    Does only
+      "You press the call button and after a few seconds the
+       chime of a bell announces the arrival of the elevator."
+       Depending on current location
+        = 'Ground Floor'
+          Then set curr_floor of elevator to 'Ground Floor'.
+        = 'First Floor'
+          Then set curr_floor of elevator to 'First Floor'.
+        = 'Second Floor'
+          Then set curr_floor of elevator to 'Second Floor'.
+      End depend.
+  End verb press_button.
+End every room_with_elevator.
+
+--------------------------------------------------------------------------------
+-- Ground Floor
+--------------------------------------------------------------------------------
+The 'Ground Floor' IsA room_with_elevator
+  Has xtra_desc "Stairs lead up to the first floor.".
+  Exit up to 'First Floor'.
+End the.
+
+--------------------------------------------------------------------------------
+-- 1st Floor
+--------------------------------------------------------------------------------
+The 'First Floor' IsA room_with_elevator.
+  Has xtra_desc "Stairs lead up and down, to the second and first floor.".
+  Exit up to 'Second Floor'.
+  Exit down to 'Ground Floor'.
+End the.
+--------------------------------------------------------------------------------
+-- 2nd Floor
+--------------------------------------------------------------------------------
+The 'Second Floor' IsA room_with_elevator.
+  Has xtra_desc "Stairs lead down to the first floor.".
+  Exit down to 'First Floor'.
+End the.
+
+-- =============================================================================
+
+-- Miscellanea
+
+-- =============================================================================
+-- A few verbs and directions definitions to flesh out the adventure world...
+
+The nowhere IsA location.
+  Exit north, east, south, west to nowhere.
+End the.
+
+Synonyms
+  N = north.
+  E = east.
+  S = south.
+  W = west.
+  U = up.
+  D = down.
+  L = 'look'.
+
+Syntax 'look' = 'look'.
+
+Verb 'look'
+  Does look.
+End verb.
+--------------------------------------------------------------------------------
+Start at 'Ground Floor'.
+  Style alert. "Simple Elevator" Style normal.
+  "$pAn example by Tristano Ajmone, 2019."
+
+--/// End of File ///--

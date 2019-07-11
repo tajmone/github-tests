@@ -1,0 +1,47 @@
+
+Simple Elevator 
+
+An example by Tristano Ajmone, 2019.
+
+
+Ground Floor
+To the north the elevator awaits you with open doors. Stairs lead up to
+the first floor.
+
+> look
+Ground Floor
+To the north the elevator awaits you with open doors. Stairs lead up to
+the first floor.
+
+> call lift
+I don't know the word 'lift'.
+
+> north
+Inside The Elevator
+You can see three buttons, numbered from 0 to 2.
+
+> press 2
+You press button 2 and the elevators takes you to the requested floor.
+
+> south
+Second Floor
+To the north the elevator awaits you with open doors. Stairs lead down to
+the first floor.
+
+> down
+First Floor
+To the north you can see the shut elevator doors. Stairs lead up and
+down, to the second and first floor.
+
+> north
+The elevator is not at this floor right now.
+
+> call lift
+I don't know the word 'lift'.
+
+> north
+The elevator is not at this floor right now.
+
+> 
+
+Do you want to UNDO, RESTART, RESTORE or QUIT ? 
