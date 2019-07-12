@@ -5,4 +5,4 @@ git:
 notifications:
   on_success: never
   on_failure: never
-script: ./travis/build.exe
+script: ./travis/builder.exe

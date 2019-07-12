@@ -1,0 +1,12 @@
+--==============================================================================
+-- "Non-Compilable" by Tristano Ajmone
+--==============================================================================
+
+ERR_XYZ
+
+THE start_loc IsA LOCATION
+  
+END THE start_loc.
+
+
+Start at start_loc.
