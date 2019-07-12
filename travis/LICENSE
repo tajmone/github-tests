@@ -1,9 +1,12 @@
 
-The file "build.exe" is Copyright by Tristano Ajmone, 2019 and can't
-be redistributed without permission.
+The file "builder.exe" is Copyright by Tristano Ajmone, 2019,
+released under MIT License. The source files and updated version
+of this tool can be found at:
+
+  https://github.com/alan-if/Alan-Builder
 
 Since it was created using PureBasic, the following third party
-components licenses apply.
+components licenses apply to the binary executable.
 
 This program makes use of the following components:
 

@@ -36,6 +36,10 @@ This Travis test was designed to simulate the actual build system for a project 
 
 That is a repository containing text-adventures examples, and I need to ensure that all adventures submitted by pull requests meet certain criteria. In order to validate them I need to compile and run them using the ALAN compiler and interpreter.
 
+The binary tool used to test continuos integration is being developed here:
+
+- https://github.com/alan-if/Alan-Builder
+
 ## The Problem 
 
 The problem with the build system is that ALAN binaries are only available as 32 bit applications, and that being in beta stage they are not available for Linux systems via package managers.
